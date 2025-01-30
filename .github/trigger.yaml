@@ -1,0 +1,12 @@
+name: Test trigger workflows
+on:
+  workflow_dispatch:
+    inputs:
+      rc_release_tag:
+jobs:
+  name: accept job
+  runs-on: ubuntu-latest
+  steps:
+    - name: echo
+      run: |
+        echo "hello"
