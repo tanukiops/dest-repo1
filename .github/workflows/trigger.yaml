@@ -3,10 +3,14 @@ on:
   workflow_dispatch:
     inputs:
       rc_release_tag:
+        description: ""
+        default: ""
+        required: true
 jobs:
-  name: accept job
-  runs-on: ubuntu-latest
-  steps:
-    - name: echo
-      run: |
-        echo "hello"
+  bla:
+    name: accept job
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: |
+          echo "hello"
